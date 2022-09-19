@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://thundermarket.c4igdq8myrwv.ap-northeast-2.rds.amazonaws.com:3306/devThunderMarket?serverTimezone=UTC&characterEncoding=UTF-8
+    username: admin
+    password: admin123!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  serverlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        default_batch_fetch_size: 100
+        dialect: org.hibernate.spatial.dialect.mysql.MySQL8SpatialDialect
+      database-platform: org.hibernate.spatial.dialect.mysql.MySQL8SpatialDialect
+      database: mysql
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
