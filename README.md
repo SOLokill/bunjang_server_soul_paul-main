@@ -21,3 +21,8 @@ Password : u523lr
 - dev/prod RDS 구축 완료
 - SSL 적용 완료
 - ERD 수정 
+
+## 2022.09.18
+- erd server installaiton
+- DDL txt created
+- 
